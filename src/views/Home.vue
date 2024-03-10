@@ -3,8 +3,12 @@
 </template>
 
 <script>
+import datas from '../api/data'
 export default {
-
+mixins:[datas],
+beforeMount(){
+  this.loadData('cats');
+}
 }
 </script>
 
