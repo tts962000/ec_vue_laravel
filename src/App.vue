@@ -1,6 +1,8 @@
 <template>
   <Nav :logged="logged"/>
-  <router-view logged="logged" @loginLogoutChange="loginLogoutChange"/>
+  <div class="container">
+    <router-view logged="logged" @loginLogoutChange="loginLogoutChange"/>
+  </div>
 </template>
 <script>
 import Nav from './components/Nav.vue'
