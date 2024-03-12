@@ -49,6 +49,8 @@ export default {
     console.log(userData);
     if(userData.status){
         localStorage.setItem('token',userData.token);
+        this.$emit('loginLogoutChange');
+        this.$router.push('/') 
     }
         }
     }
